@@ -138,19 +138,19 @@
   // Demo quiz — general education only; edit questions here
   const QUIZ = [
     {
-      q: 'SPF 50 blocks twice as much UVB as SPF 25.',
+      q: 'Rest is a reward you earn after the work is finished.',
       a: false,
-      why: 'SPF 25 filters roughly 96% of UVB and SPF 50 about 98%. The bigger win is using enough and reapplying every two hours outdoors.',
+      why: 'Recovery is part of performance, not a prize for it. Leaders who schedule rest deliberately make better decisions under pressure.',
     },
     {
-      q: 'Feeling better halfway through an antibiotic course? Check with your pharmacist or doctor before stopping.',
-      a: true,
-      why: 'Course length is chosen for the infection you have. Your prescriber can tell you whether stopping early is appropriate.',
+      q: 'Africa is one market with one set of rules for doing business.',
+      a: false,
+      why: 'Fifty-four countries, each with its own regulation, culture and customer. Winning in Africa starts with treating them as distinct moves.',
     },
     {
-      q: 'A steamy bathroom cabinet is a good place to keep medicine.',
+      q: 'Talking openly about burnout at work makes a leader look weaker to their team.',
       a: false,
-      why: 'Heat and humidity can make some medicines break down faster. A cool, dry cupboard out of children\'s reach is better.',
+      why: 'Teams consistently report more trust in leaders who name the pressure honestly. Silence is what costs credibility.',
     },
   ];
   const panel = $('[data-quiz]');
@@ -172,7 +172,7 @@
     panel.innerHTML = `
       <p class="q__count">Your score</p>
       <p class="q__score">${score}/${QUIZ.length}</p>
-      <p>${score === QUIZ.length ? 'Counter-ready. ' : ''}The full quizzes go deeper — new ones land in the newsletter first.</p>
+      <p>${score === QUIZ.length ? 'Off the clock and on the money. ' : ''}The full conversations go deeper — new episodes land in the newsletter first.</p>
       <div class="q__opts">
         <a class="btn btn--light" href="#newsletter">Get the next quiz</a>
         <button class="q__opt" type="button" data-restart>Play again</button>
